@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>Archetype Created Web Application</display-name>
+	<filter>
+		<filter-name>FranceConnectAuthenticationFilter</filter-name>
+		<filter-class>fr.smile.pocfc.FranceConnectAuthenticationFilter</filter-class>
+		<init-param>
+			<param-name>clientId</param-name>
+			<param-value>xxx</param-value>
+		</init-param>
+		<init-param>
+			<param-name>clientSecret</param-name>
+			<param-value>yyy</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>FranceConnectAuthenticationFilter</filter-name>
+		<url-pattern>/secured/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>FranceConnectAuthenticationFilter</filter-name>
+		<url-pattern>/fc/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>FranceConnectLogoutFilter</filter-name>
+		<filter-class>fr.smile.pocfc.FranceConnectLogoutFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FranceConnectLogoutFilter</filter-name>
+		<url-pattern>/logout/*</url-pattern>
+	</filter-mapping>
+</web-app>
