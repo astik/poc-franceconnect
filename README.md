@@ -76,6 +76,23 @@ Après authentification, le kit (https://doc.integ01.dev-franceconnect.fr/ressou
     
 
 
+## Base de développement
+
+Ce projet permet de tester l'utilisation d'Oltu.
+Le code du projet suivant a été réutilisé :
+
+	https://github.com/florent-andre/franceconnecthelper
+
+Un légère modification a été réalisée sur a classe FcConnection.java :
+
+	public String getAccessToken(HttpServletRequest request) throws FcConnectException{
+
+transformé en 
+
+	public OAuthJSONAccessTokenResponse getAccessToken(HttpServletRequest request) throws FcConnectException{
+
+
+
 ## Dernière chose
 
 Ce projet est un POC réalisé pendant le workshop FranceConnect du 20/01/2016 (http://www.meetup.com/fr-FR/FranceConnect/events/227568100/).
