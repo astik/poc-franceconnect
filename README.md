@@ -22,7 +22,7 @@ Ce besoin semble pertinent pour pas mal de solution :
 
 Vous aurez besoin pour cette démo d'un compte FranceConnect.
 
-Dans la configuration de votre compte (https://doc.integ01.dev-franceconnect.fr/updateClient), vous devrez positionner ces configurations :
+Dans la configuration de votre compte (https://partenaires.franceconnect.gouv.fr/), vous devrez positionner ces configurations :
 
 Urls de callback (une par ligne :
 
@@ -49,7 +49,7 @@ Pour faire fonctionner l'application :
 
 - lancer tomcat :
 
-	mvn tomcat:run
+	mvn tomcat7:run
 
 - accéder avec votre navigateur à l'adresse :
 
@@ -72,7 +72,7 @@ Pour faire fonctionner l'application :
 
 ## Kit FranceConnect
 
-Après authentification, le kit (https://doc.integ01.dev-franceconnect.fr/ressources-graphiques) est visible  par l'affichage de l'image FranceConnect en haut à gauche. en cliquant dessus vous accéder à plusieurs outils (statistiques et déconnexion par exemple).
+Après authentification, le kit est visible  par l'affichage de l'image FranceConnect en haut à gauche. en cliquant dessus vous accéder à plusieurs outils (statistiques et déconnexion par exemple).
     
 
 
